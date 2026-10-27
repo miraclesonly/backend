@@ -732,3 +732,7 @@ Monitor logs for:
 ## License
 
 MIT
+
+## Fix for Issue #209: Webhook endpoints lack replay-attack prevention
+
+Add HMAC signature verification and timestamp validation to webhook endpoints. Reject requests with timestamps older than 5 minutes.
